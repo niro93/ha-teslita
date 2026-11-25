@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Teslita verbinden",
+        "description": "Gib einen Teslita-API-Schlüssel mit Leseberechtigung (read) ein. Der Schlüssel wird in Home Assistant gespeichert und nicht protokolliert.",
+        "data": {
+          "api_key": "API-Schlüssel"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zu Teslita fehlgeschlagen oder der API-Schlüssel ist ungültig.",
+      "invalid_auth": "Der API-Schlüssel benötigt die Leseberechtigung (read).",
+      "no_vehicles": "Für dieses Teslita-Konto sind keine aktiven Fahrzeuge verfügbar."
+    },
+    "abort": {
+      "already_configured": "Dieses Teslita-Konto ist bereits eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Teslita konfigurieren",
+        "description": "Lege fest, wie oft die Fahrzeugdaten aktualisiert werden. Zulässig sind 60 bis 3600 Sekunden.",
+        "data": {
+          "scan_interval": "Abfrageintervall (Sekunden)"
+        }
+      }
+    }
+  }
+}
